@@ -45,12 +45,29 @@ a script, and run it.
 An example script looks a little somethign like this:
 
 ```javascript
-    onScriptStart( function(event) {
-        info("This script has started");
+    var i = 0;
+
+    onScriptStart(function(event) {
+        info("Script Started Event");
+
+        var task = taskOf("started-script-task");
+        setTaskDelay(3000);
+        setTaskInterval(3000);
+        setTaskExecutable(function(task) {
+            info("Task running!");
+
+            if ( i == 10 ) {
+                task.cancel();
+            }
+
+            i++;
+        });
+
+        startTask(task);
     });
 
-    onScriptStop( function(event) {
-        info("This script has stopped");
+    onScriptStop(function(event) {
+        info("Script Stopped Event");
     });
 ```
 

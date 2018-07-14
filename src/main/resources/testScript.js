@@ -21,4 +21,4 @@ onScriptStart(function(event) {
 
 onScriptStop(function(event) {
     info("Script Stopped Event");
-})
+});
