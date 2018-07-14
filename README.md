@@ -1,4 +1,4 @@
-![](AtherysScript.png?raw=true)
+<p align="center"><img src="AtherysScript.png"></img></p>
 
 # AtherysScript
 
