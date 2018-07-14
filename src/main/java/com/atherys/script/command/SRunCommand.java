@@ -36,7 +36,6 @@ public class SRunCommand implements ParameterizedCommand {
         String script = args.<String>getOne("javascript").orElse("");
 
         if (script.isEmpty()) return CommandResult.empty();
-
         else {
             try {
                 long before = System.currentTimeMillis();
@@ -54,7 +53,7 @@ public class SRunCommand implements ParameterizedCommand {
                 src.sendMessage(Text.of(ERROR_PREFIX, TextColors.RED, "Executed: ", TextColors.RESET, script));
                 src.sendMessage(Text.of(ERROR_PREFIX, TextColors.RED, "Error: ", TextColors.RESET, e.getMessage()));
 
-                if (e.getMessage() == null) e.printStackTrace();
+                e.printStackTrace();
             }
         }
 
