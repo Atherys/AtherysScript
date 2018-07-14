@@ -11,6 +11,7 @@ import org.spongepowered.api.event.game.GameReloadEvent;
 import org.spongepowered.api.event.game.state.GameInitializationEvent;
 import org.spongepowered.api.event.game.state.GameStartedServerEvent;
 import org.spongepowered.api.event.game.state.GameStoppingServerEvent;
+import org.spongepowered.api.plugin.Dependency;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.plugin.PluginContainer;
 
@@ -19,7 +20,9 @@ import java.io.IOException;
 
 import static com.atherys.script.AtherysScript.*;
 
-@Plugin(id = ID, name = NAME, description = DESCRIPTION, version = VERSION)
+@Plugin(id = ID, name = NAME, description = DESCRIPTION, version = VERSION, dependencies = {
+        @Dependency(id = "atheryscore")
+})
 public class AtherysScript {
 
     static final String ID = "atherysscript";
