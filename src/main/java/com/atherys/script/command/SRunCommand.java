@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 
 @Aliases("srun")
 @Description("Runs a script")
-@Permission("atherysquests.admin.srun")
+@Permission("atherysscript.admin.srun")
 public class SRunCommand implements ParameterizedCommand {
 
     private static final Text SUCCESS_PREFIX = Text.of(TextColors.DARK_GREEN, "[", TextColors.GREEN, "SUCCESS", TextColors.DARK_GREEN, "] ", TextColors.RESET);
