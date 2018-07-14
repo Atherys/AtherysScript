@@ -1,3 +1,5 @@
+![](AtherysScript.png?raw=true)
+
 # AtherysScript
 
 AtherysScript is a plugin for the SpongeAPI, developed for use on the
