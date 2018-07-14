@@ -1,5 +1,8 @@
 package com.atherys.script.api.library;
 
+/**
+ * A utility class for wrapping the key and value of a global to be set to a {@link ScriptLibrary}
+ */
 public final class ScriptAddon<T> {
 
     private String key;
