@@ -58,6 +58,10 @@ Documentation on event hooks and all available functions to ease the
 creation of a script can be found on the wiki ( which is currently a
 WIP ).
 
+## Requirements
+
+Just the one: https://github.com/Atherys-Horizons/AtherysCore
+
 ## Need some help?
 
 Stop by the A'therys Horizons discord server! https://discord.gg/TYWvzME
