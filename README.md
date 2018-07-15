@@ -39,10 +39,10 @@ and load all files present in the scripts folder as a script file.
 Please ensure there are **only** script files in the folder, else you
 may get unexpected errors in the console.
 
-Upon discovering a script file, the ScriptServer will register it as
+Upon discovering a script file, the ScriptService will register it as
 a script, and run it.
 
-An example script looks a little somethign like this:
+An example script looks a little something like this:
 
 ```javascript
     var i = 0;
