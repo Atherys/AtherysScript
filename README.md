@@ -71,9 +71,9 @@ An example script looks a little somethign like this:
     });
 ```
 
-Documentation on event hooks and all available functions to ease the
-creation of a script can be found on the wiki ( which is currently a
-WIP ).
+## Documentation
+
+Documentation can be found on the GitHub wiki: https://github.com/Atherys-Horizons/AtherysScript/wiki
 
 ## Requirements
 
