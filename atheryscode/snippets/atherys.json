@@ -1,0 +1,428 @@
+//Atherys Snippets for VS Code
+{
+	"TextOf": {
+		"prefix": "textOf",
+		"body": "textOf(${1:objects})",
+		"description": " "
+	},
+	"Color": {
+		"prefix": "color",
+		"body": "color(${1:textColorId})",
+		"description": " "
+	},
+	"Style": {
+		"prefix": "style",
+		"body": "style(${1:textStyleId})",
+		"description": " "
+	},
+	"BlockOf": {
+		"prefix": "blockOf",
+		"body": "blockOf(${1:blockTypeId})",
+		"description": " "
+	},
+	"GetBlockFromLocation": {
+		"prefix": "getBlockFromLocation",
+		"body": "getBlockFromLocation(${1:worldLocation})",
+		"description": " "
+	},
+	"SetBlockAtLocation": {
+		"prefix": "setBlockAtLocation",
+		"body": "setBlockAtLocation(${1:worldLocation}, ${2:state})",
+		"description": " "
+	},
+	"GetWorldFromName": {
+		"prefix": "getWorldFromName",
+		"body": "getWorldFromName(${1:worldName})",
+		"description": " "
+	},
+	"LocationOf": {
+		"prefix": "locationOf",
+		"body": "locationOf(${1:world}, ${2:x}, ${3:y}, ${4:z})",
+		"description": " "
+	},
+	"UUIDOf": {
+		"prefix": "uuidOf",
+		"body": "uuidOf(${1:s})",
+		"description": " "
+	},
+	"RandomUUID": {
+		"prefix": "randomUUID",
+		"body": "randomUUID()",
+		"description": " "
+	},
+	"InfoOutput": {
+		"prefix": "info",
+		"body": "info(${1:msg})",
+		"description": " "
+	},
+	"WarningOutput": {
+		"prefix": "warn",
+		"body": "warn(${1:msg})",
+		"description": " "
+	},
+	"ErrorOutput": {
+		"prefix": "error",
+		"body": "error(${1:msg})",
+		"description": " "
+	},
+	"DebugOutput": {
+		"prefix": "debug",
+		"body": "debug(${1:msg})",
+		"description": " "
+	},
+	"TaskOf": {
+		"prefix": "buildTask",
+		"body": "buildTask(${1:name})",
+		"description": " "
+	},
+	"SetTaskDelay": {
+		"prefix": "setTaskDelay",
+		"body": "setTaskDelay(${1:builder}, ${2:ticks})",
+		"description": " "
+	},
+	"SetTaskInterval": {
+		"prefix": "setTaskInterval",
+		"body": "setTaskInterval(${1:builder}, ${2:ticks})",
+		"description": " "
+	},
+	"SetTaskExecutable": {
+		"prefix": "setTaskExecutable",
+		"body": "setTaskExecutable(${1:builder}, ${2:runnable})",
+		"description": " "
+	},
+	"StartTask": {
+		"prefix": "startTask",
+		"body": "startTask(${1:builder})",
+		"description": " "
+	},
+	"CancelTask": {
+		"prefix": "cancelTask",
+		"body": "cancelTask(${1:task})",
+		"description": " "
+	},
+	"CreateItemStack": {
+		"prefix": "createItemStack",
+		"body": "createItemStack(${1:itemTypeId}, ${2:amount})",
+		"description": " "
+	},
+	"GetItemStackEnchants": {
+		"prefix": "getItemStackEnchants",
+		"body": "getItemStackEnchants(${1:itemStack})",
+		"description": " "
+	},
+	"GetItemStackDisplayName": {
+		"prefix": "getItemStackDisplayName",
+		"body": "getItemStackDisplayName(${1:itemStack})",
+		"description": " "
+	},
+	"GetItemStackLore": {
+		"prefix": "getItemStackLore",
+		"body": "getItemStackLore(${1:itemStack})",
+		"description": " "
+	},
+	"SetItemStackEnchants": {
+		"prefix": "setItemStackEnchants",
+		"body": "setItemStackEnchants(${1:itemStack}, ${2:enchantments})",
+		"description": " "
+	},
+	"SetItemStackDisplayName": {
+		"prefix": "setItemStackDisplayName",
+		"body": "setItemStackDisplayName(${1:itemStack}, ${2:text})",
+		"description": " "
+	},
+	"SetItemStackLore": {
+		"prefix": "setItemStackLore",
+		"body": "setItemStackLore(${1:itemStack}, ${2:lore})",
+		"description": " "
+	},
+	"IsItemStack": {
+		"prefix": "isItemStack",
+		"body": "isItemStack()",
+		"description": " "
+	},
+	"CompareItemStacks": {
+		"prefix": "compareItemStacks",
+		"body": "compareItemStacks(${1:first}, ${2:second})",
+		"description": " "
+	},
+	"DropItemStackOnGround": {
+		"prefix": "dropItemStackOnGround",
+		"body": "dropItemStackOnGround(${1:itemStack}, ${2:location})",
+		"description": " "
+	},
+	"EventHandlerFunction<>DamageEntityEvent.class": {
+		"prefix": "onEntityDamage",
+		"body": "onEntityDamage()",
+		"description": " "
+	},
+	"EventHandlerFunction<>MoveEntityEvent.class": {
+		"prefix": "onEntityMove",
+		"body": "onEntityMove()",
+		"description": " "
+	},
+	"EventHandlerFunction<>JSScriptStartEvent.class": {
+		"prefix": "onScriptStart",
+		"body": "onScriptStart()",
+		"description": " "
+	},
+	"EventHandlerFunction<>JSScriptReloadEvent.class": {
+		"prefix": "onScriptReload",
+		"body": "onScriptReload()",
+		"description": " "
+	},
+	"EventHandlerFunction<>JSScriptStopEvent.class": {
+		"prefix": "onScriptStop",
+		"body": "onScriptStop()",
+		"description": " "
+	},
+	"GetPlayerFromName": {
+		"prefix": "getPlayerFromName",
+		"body": "getPlayerFromName(${1:playerName})",
+		"description": " "
+	},
+	"GetPlayerFromUUID": {
+		"prefix": "getPlayerFromUUID",
+		"body": "getPlayerFromUUID(${1:uuid})",
+		"description": " "
+	},
+	"GetPlayerLocation": {
+		"prefix": "getPlayerLocation",
+		"body": "getPlayerLocation(${1:player})",
+		"description": " "
+	},
+	"GetPlayerUUID": {
+		"prefix": "getPlayerUUID",
+		"body": "getPlayerUUID(${1:player})",
+		"description": " "
+	},
+	"TeleportPlayer": {
+		"prefix": "teleportPlayer",
+		"body": "teleportPlayer(${1:player}, ${2:location})",
+		"description": " "
+	},
+	"BuildDamageSource": {
+		"prefix": "buildDamage",
+		"body": "buildDamage(${1:builder})",
+		"description": " "
+	},
+	"BlockDamageSourceBuilder": {
+		"prefix": "blockDamageBuilder",
+		"body": "blockDamageBuilder()",
+		"description": " "
+	},
+	"FallingBlockDamageSourceBuilder": {
+		"prefix": "fallingBlockDamageBuilder",
+		"body": "fallingBlockDamageBuilder()",
+		"description": " "
+	},
+	"IndirectEntityDamageSourceBuilder": {
+		"prefix": "indirectEntityDamageBuilder",
+		"body": "indirectEntityDamageBuilder()",
+		"description": " "
+	},
+	"EntityDamageSourceBuilder": {
+		"prefix": "entityDamageBuilder",
+		"body": "entityDamageBuilder()",
+		"description": " "
+	},
+	"SetDamageSourceAbsolute": {
+		"prefix": "setDamageAbsolute",
+		"body": "setDamageAbsolute(${1:builder})",
+		"description": " "
+	},
+	"SetDamageSourceBlock": {
+		"prefix": "setDamageBlock",
+		"body": "setDamageBlock(${1:blockSnapshot}, ${2:builder})",
+		"description": " "
+	},
+	"SetDamageSourceBlockLocation": {
+		"prefix": "setDamageBlockLocation",
+		"body": "setDamageBlockLocation(${1:blockLocation}, ${2:builder})",
+		"description": " "
+	},
+	"SetDamageSourceBypassArmor": {
+		"prefix": "setDamageBypass",
+		"body": "setDamageBypass(${1:damageSourceBuilder})",
+		"description": " "
+	},
+	"SetDamageSourceCreative": {
+		"prefix": "setDamageCreative",
+		"body": "setDamageCreative(${1:damageSourceBuilder})",
+		"description": " "
+	},
+	"SetDamageSourceEntity": {
+		"prefix": "setDamageEntity",
+		"body": "setDamageEntity(${1:entity}, ${2:builder})",
+		"description": " "
+	},
+	"SetDamageSourceExhaustion": {
+		"prefix": "setDamageExhaustion",
+		"body": "setDamageExhaustion(${1:damageSourceBuilder}, ${2:exhaustion})",
+		"description": " "
+	},
+	"SetDamageSourceExplosion": {
+		"prefix": "setDamageExplosive",
+		"body": "setDamageExplosive(${1:builder})",
+		"description": " "
+	},
+	"SetDamageSourceFallingBlock": {
+		"prefix": "setDamageFallingBlock",
+		"body": "setDamageFallingBlock(${1:immutableFallingBlockData}, ${2:builder})",
+		"description": " "
+	},
+	"SetDamageSourceMagical": {
+		"prefix": "setDamageMagical",
+		"body": "setDamageMagical(${1:builder})",
+		"description": " "
+	},
+	"SetDamageSourceProxySource": {
+		"prefix": "setDamageProxy",
+		"body": "setDamageProxy(${1:entity}, ${2:builder})",
+		"description": " "
+	},
+	"SetDamageSourceScale": {
+		"prefix": "setDamageScale",
+		"body": "setDamageScale(${1:damageSourceBuilder})",
+		"description": " "
+	},
+	"SetDamageSourceType": {
+		"prefix": "setDamageType",
+		"body": "setDamageType(${1:damageType})",
+		"description": " "
+	},
+	"CreatePotionEffect": {
+		"prefix": "createPotionEffect",
+		"body": "createPotionEffect(${1:effectId}, ${2:amplification}, ${3:durationTicks}, ${4:isAmbient}, ${5:hasParticles})",
+		"description": " "
+	},
+	"CreateEntity": {
+		"prefix": "createEntity",
+		"body": "createEntity(${1:entityType}, ${2:worldLocation})",
+		"description": " "
+	},
+	"SpawnEntity": {
+		"prefix": "spawnEntity",
+		"body": "spawnEntity(${1:entity})",
+		"description": " "
+	},
+	"HealEntity": {
+		"prefix": "healEntity",
+		"body": "healEntity(${1:entity}, ${2:amount})",
+		"description": " "
+	},
+	"DamageEntity": {
+		"prefix": "damageEntity",
+		"body": "damageEntity(${1:entity}, ${2:src}, ${3:damage})",
+		"description": " "
+	},
+	"AddEntityPotionEffect": {
+		"prefix": "addEntityPotionEffect",
+		"body": "addEntityPotionEffect(${1:entity}, ${2:potionEffect})",
+		"description": " "
+	},
+	"SetEntityPotionEffects": {
+		"prefix": "setEntityPotionEffects",
+		"body": "setEntityPotionEffects(${1:entity}, ${2:effects})",
+		"description": " "
+	},
+	"GetEntityPotionEffects": {
+		"prefix": "getEntityPotionEffects",
+		"body": "getEntityPotionEffects(${1:entity})",
+		"description": " "
+	},
+	"GetEntityHealth": {
+		"prefix": "getEntityHealth",
+		"body": "getEntityHealth(${1:entity})",
+		"description": " "
+	},
+	"GetEntityBoots": {
+		"prefix": "getEntityBoots",
+		"body": "getEntityBoots(${1:entity})",
+		"description": " "
+	},
+	"GetEntityChestplate": {
+		"prefix": "getEntityChestplate",
+		"body": "getEntityChestplate(${1:entity})",
+		"description": " "
+	},
+	"GetEntityHelmet": {
+		"prefix": "getEntityHelmet",
+		"body": "getEntityHelmet(${1:entity})",
+		"description": " "
+	},
+	"GetEntityLeggings": {
+		"prefix": "getEntityLeggings",
+		"body": "getEntityLeggings(${1:entity})",
+		"description": " "
+	},
+	"GetEntityMainHand": {
+		"prefix": "getEntityMainHand",
+		"body": "getEntityMainHand(${1:entity})",
+		"description": " "
+	},
+	"GetEntityOffhand": {
+		"prefix": "getEntityOffHand",
+		"body": "getEntityOffHand(${1:entity})",
+		"description": " "
+	},
+	"GetEntityHealth": {
+		"prefix": "getEntityHealth",
+		"body": "getEntityHealth(${1:entity})",
+		"description": " "
+	},
+	"GetEntityMaxHealth": {
+		"prefix": "getEntityMaxHealth",
+		"body": "getEntityMaxHealth(${1:entity})",
+		"description": " "
+	},
+	"GetEntityUUID": {
+		"prefix": "getEntityUUID",
+		"body": "getEntityUUID(${1:entity})",
+		"description": " "
+	},
+	"GetEntityName": {
+		"prefix": "getEntityName",
+		"body": "getEntityName(${1:entity})",
+		"description": " "
+	},
+	"SetEntityBoots": {
+		"prefix": "setEntityBoots",
+		"body": "setEntityBoots(${1:entity}, ${2:boots})",
+		"description": " "
+	},
+	"SetEntityChestplate": {
+		"prefix": "setEntityChestplate",
+		"body": "setEntityChestplate(${1:entity}, ${2:chestplate})",
+		"description": " "
+	},
+	"SetEntityHelmet": {
+		"prefix": "setEntityHelmet",
+		"body": "setEntityHelmet(${1:entity}, ${2:helmet})",
+		"description": " "
+	},
+	"SetEntityLeggings": {
+		"prefix": "setEntityLeggings",
+		"body": "setEntityLeggings(${1:entity}, ${2:leggings})",
+		"description": " "
+	},
+	"SetEntityMainHand": {
+		"prefix": "setEntityMainHand",
+		"body": "setEntityMainHand(${1:entity}, ${2:item})",
+		"description": " "
+	},
+	"SetEntityOffhand": {
+		"prefix": "setEntityOffHand",
+		"body": "setEntityOffHand(${1:entity}, ${2:item})",
+		"description": " "
+	},
+	"SetEntityMaxHealth": {
+		"prefix": "setEntityMaxHealth",
+		"body": "setEntityMaxHealth(${1:entity}, ${2:maxHealth})",
+		"description": " "
+	},
+	"SetEntityName": {
+		"prefix": "setEntityName",
+		"body": "setEntityName(${1:entity}, ${2:name})",
+		"description": " "
+	},
+}

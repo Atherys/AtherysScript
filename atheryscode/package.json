@@ -1,0 +1,28 @@
+{
+    "name": "atheryscode",
+    "displayName": "AtherysCode",
+    "description": "Snippets for A'therys scripting.",
+    "version": "0.0.1",
+    "publisher": "Atherys",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/atherys.json"
+			}
+		]
+	},
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "eslint": "^4.11.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    }
+}
