@@ -71,6 +71,10 @@ An example script looks a little something like this:
     });
 ```
 
+## Recommended Editor
+
+We recommend the use of [Visual Studio Code](https://code.visualstudio.com/) with the [AtherysCore](https://marketplace.visualstudio.com/items?itemName=AtherysHorizons.atheryscode) ( [Source](https://github.com/Atherys-Horizons/AtherysCore) ) extention for purposes of script development.
+
 ## Documentation
 
 Documentation can be found on the GitHub wiki: https://github.com/Atherys-Horizons/AtherysScript/wiki
