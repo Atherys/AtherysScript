@@ -7,6 +7,12 @@ public class SoundLibrary implements LibraryExtension {
 
     @Override
     public void extend(ScriptLibrary library) {
-
+        library.put("soundBuilder", new SoundBuilder());
+        library.put("playSound", new PlaySound());
+        library.put("buildSound", new BuildSound());
+        library.put("setSound", new SoundBuilder());
+        library.put("setSoundCategory", new SetSoundCategory());
+        library.put("setSoundMinVolume", new SetSoundMinVolume());
+        library.put("setSoundPitch", new SetSoundPitch());
     }
 }
