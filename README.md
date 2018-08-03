@@ -34,7 +34,7 @@ look for a folder in the root directory of your minecraft server
 
 The exact name of this folder is configurable and can be found in the
 plugin config. If the plugin does not find this folder, it will create it.
-Once it is create it, the ScriptService will automatically look through it
+Once it is created, the ScriptService will automatically look through it
 and load all files present in the scripts folder as a script file.
 Please ensure there are **only** script files in the folder, else you
 may get unexpected errors in the console.
