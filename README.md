@@ -51,8 +51,8 @@ An example script looks a little something like this:
         info("Script Started Event");
 
         var task = taskOf("started-script-task");
-        setTaskDelay(3000);
-        setTaskInterval(3000);
+        setTaskDelay(task, 3000);
+        setTaskInterval(task, 3000);
         setTaskExecutable(function(task) {
             info("Task running!");
 
