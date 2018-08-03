@@ -26,7 +26,7 @@ information, see here:
 
 ## How does it work?
 
-Documentation at present is sparse, and this is being worked on.
+Documentation at present is available, but is not very detailed. It can be found on [this project's wiki](https://github.com/Atherys-Horizons/AtherysScript/wiki).
 
 When you add this plugin to your mods folder, on first start up it will
 look for a folder in the root directory of your minecraft server
