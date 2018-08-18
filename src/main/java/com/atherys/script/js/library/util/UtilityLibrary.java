@@ -13,6 +13,7 @@ public final class UtilityLibrary implements LibraryExtension {
         library.put("warn", new WarningOutput());
         library.put("error", new ErrorOutput());
         library.put("debug", new DebugOutput());
+        library.put("listOf", new ListOf<>());
     }
 
 }
