@@ -14,7 +14,6 @@ public final class EntityLibrary implements LibraryExtension {
         library.put("addEntityPotionEffect", new AddEntityPotionEffect());
         library.put("setEntityPotionEffects", new SetEntityPotionEffects());
         library.put("getEntityPotionEffects", new GetEntityPotionEffects());
-        library.put("getEntityHealth", new GetEntityHealth());
         library.put("getEntityBoots", new GetEntityBoots());
         library.put("getEntityChestplate", new GetEntityChestplate());
         library.put("getEntityHelmet", new GetEntityHelmet());
