@@ -26,7 +26,7 @@ information, see here:
 
 ## How does it work?
 
-Documentation at present is sparse, and this is being worked on.
+Documentation at present is available, but is not very detailed. It can be found on [this project's wiki](https://github.com/Atherys-Horizons/AtherysScript/wiki).
 
 When you add this plugin to your mods folder, on first start up it will
 look for a folder in the root directory of your minecraft server
@@ -34,7 +34,7 @@ look for a folder in the root directory of your minecraft server
 
 The exact name of this folder is configurable and can be found in the
 plugin config. If the plugin does not find this folder, it will create it.
-Once it is create it, the ScriptService will automatically look through it
+Once it is created, the ScriptService will automatically look through it
 and load all files present in the scripts folder as a script file.
 Please ensure there are **only** script files in the folder, else you
 may get unexpected errors in the console.
@@ -51,8 +51,8 @@ An example script looks a little something like this:
         info("Script Started Event");
 
         var task = taskOf("started-script-task");
-        setTaskDelay(3000);
-        setTaskInterval(3000);
+        setTaskDelay(task, 3000);
+        setTaskInterval(task, 3000);
         setTaskExecutable(function(task) {
             info("Task running!");
 
@@ -70,6 +70,10 @@ An example script looks a little something like this:
         info("Script Stopped Event");
     });
 ```
+
+## Recommended Editor
+
+We recommend the use of [Visual Studio Code](https://code.visualstudio.com/) with the [AtherysCode](https://marketplace.visualstudio.com/items?itemName=AtherysHorizons.atheryscode) ( [Source](https://github.com/Atherys-Horizons/AtherysCode) ) extention for purposes of script development.
 
 ## Documentation
 
