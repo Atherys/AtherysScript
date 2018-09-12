@@ -8,6 +8,9 @@ import org.spongepowered.api.world.World;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class SetDamageSourceBlockLocation implements BiFunction<Location, DamageSource.DamageSourceBuilder, BlockDamageSource.Builder> {
 
     @Override

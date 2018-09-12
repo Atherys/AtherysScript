@@ -4,6 +4,9 @@ import org.spongepowered.api.entity.Entity;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class SpawnEntity implements Function<Entity, Boolean> {
     @Override
     public Boolean apply(Entity entity) {

@@ -6,6 +6,9 @@ import org.spongepowered.api.world.World;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class TeleportPlayer implements BiFunction<Player, Location<World>, Boolean> {
     @Override
     public Boolean apply(Player player, Location<World> location) {

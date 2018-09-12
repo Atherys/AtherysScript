@@ -4,6 +4,9 @@ import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetDamageSourceExhaustion implements BiFunction<DamageSource.DamageSourceBuilder, Double, DamageSource.DamageSourceBuilder> {
 
     @Override

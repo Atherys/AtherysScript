@@ -6,6 +6,9 @@ import org.spongepowered.api.text.Text;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetEntityName implements Function<Entity, Text> {
     public Text apply(Entity entity){
         return entity.get(Keys.DISPLAY_NAME).get();

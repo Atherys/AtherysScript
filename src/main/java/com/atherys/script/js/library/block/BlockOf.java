@@ -6,6 +6,9 @@ import org.spongepowered.api.block.BlockType;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class BlockOf implements Function<String, BlockState> {
     @Override
     public BlockState apply(String blockTypeId) {

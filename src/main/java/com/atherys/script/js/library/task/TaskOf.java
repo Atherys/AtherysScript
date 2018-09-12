@@ -4,6 +4,9 @@ import org.spongepowered.api.scheduler.Task;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class TaskOf implements Function<String, Task.Builder> {
     @Override
     public Task.Builder apply(String name) {

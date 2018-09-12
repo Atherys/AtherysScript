@@ -7,6 +7,9 @@ import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 import java.util.Optional;
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class SetDamageSourceType implements Function<String, DamageSource.DamageSourceBuilder > {
 
     @Override

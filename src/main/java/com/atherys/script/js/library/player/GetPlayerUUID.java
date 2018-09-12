@@ -5,6 +5,9 @@ import org.spongepowered.api.entity.living.player.Player;
 import java.util.UUID;
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetPlayerUUID implements Function<Player,UUID> {
     @Override
     public UUID apply(Player player) {

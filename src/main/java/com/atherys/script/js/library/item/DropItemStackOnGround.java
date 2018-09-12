@@ -9,6 +9,9 @@ import org.spongepowered.api.world.World;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class DropItemStackOnGround implements BiFunction<ItemStack, Location<World>, Entity> {
     @Override
     public Entity apply(ItemStack itemStack, Location<World> location) {

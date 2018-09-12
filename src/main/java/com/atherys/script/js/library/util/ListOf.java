@@ -5,6 +5,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class ListOf<T> implements Function<T[], List<T>> {
     @Override
     public List<T> apply(T[] array) {

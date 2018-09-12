@@ -5,6 +5,9 @@ import org.spongepowered.api.entity.living.player.Player;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetPlayerFromName implements Function<String, Player> {
     @Override
     public Player apply(String playerName) {

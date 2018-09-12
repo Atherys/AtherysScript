@@ -4,6 +4,9 @@ import org.spongepowered.api.event.cause.entity.damage.source.BlockDamageSource;
 
 import java.util.function.Supplier;
 
+/**
+ * @jsfunc
+ */
 public class BlockDamageSourceBuilder implements Supplier<BlockDamageSource.Builder> {
 
     @Override

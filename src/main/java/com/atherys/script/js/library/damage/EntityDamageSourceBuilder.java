@@ -6,6 +6,9 @@ import org.spongepowered.api.event.cause.entity.damage.source.EntityDamageSource
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+/**
+ * @jsfunc
+ */
 public class EntityDamageSourceBuilder implements Supplier<EntityDamageSource.Builder> {
 
     @Override

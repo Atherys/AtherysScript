@@ -7,6 +7,9 @@ import org.spongepowered.api.text.Text;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetItemStackLore implements BiFunction<ItemStack, Text[], Boolean> {
 
     SetItemStackLore() {}

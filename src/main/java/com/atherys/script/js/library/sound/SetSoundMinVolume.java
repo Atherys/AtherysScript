@@ -4,6 +4,9 @@ import com.atherys.core.utils.Sound;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetSoundMinVolume implements BiFunction<Sound.Builder, Double, Sound.Builder> {
 
     @Override

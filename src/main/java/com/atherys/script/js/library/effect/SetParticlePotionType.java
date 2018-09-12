@@ -7,6 +7,9 @@ import org.spongepowered.api.effect.potion.PotionEffectType;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticlePotionType implements BiFunction<ParticleEffect.Builder, String, ParticleEffect.Builder> {
 
     @Override

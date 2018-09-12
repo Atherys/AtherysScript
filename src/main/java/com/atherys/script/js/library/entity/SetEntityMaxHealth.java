@@ -6,6 +6,9 @@ import org.spongepowered.api.entity.living.Living;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetEntityMaxHealth implements BiFunction<Entity, Double, Boolean> {
     public Boolean apply(Entity entity, Double maxHealth){
         if (!(entity instanceof Living)) return false;

@@ -7,6 +7,9 @@ import org.spongepowered.api.event.cause.entity.damage.source.IndirectEntityDama
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class SetDamageSourceBypassArmor implements Function<DamageSource.DamageSourceBuilder, DamageSource.DamageSourceBuilder> {
 
     @Override

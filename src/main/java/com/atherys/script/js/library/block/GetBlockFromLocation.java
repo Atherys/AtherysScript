@@ -6,6 +6,9 @@ import org.spongepowered.api.world.World;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetBlockFromLocation implements Function<Location<World>, BlockState> {
     @Override
     public BlockState apply(Location<World> worldLocation) {

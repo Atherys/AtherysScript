@@ -6,6 +6,9 @@ import org.spongepowered.api.entity.living.Living;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class HealEntity implements BiFunction<Entity, Double, Boolean> {
     @Override
     public Boolean apply(Entity entity, Double amount) {

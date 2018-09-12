@@ -6,6 +6,9 @@ import org.spongepowered.api.text.Text;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetItemStackLore implements Function<ItemStack, Text[]> {
     @Override
     public Text[] apply(ItemStack itemStack) {

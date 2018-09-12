@@ -6,6 +6,9 @@ import org.spongepowered.api.effect.sound.SoundCategory;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetSoundCategory implements BiFunction<Sound.Builder, String, Sound.Builder> {
 
     @Override

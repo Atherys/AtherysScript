@@ -5,6 +5,9 @@ import org.spongepowered.api.scheduler.Task;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
+/**
+ * @jsfunc
+ */
 public class SetTaskExecutable implements BiFunction<Task.Builder, Consumer<Task>, Boolean> {
 
     @Override

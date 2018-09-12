@@ -8,6 +8,9 @@ import org.spongepowered.api.world.World;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class CreateEntity implements BiFunction<String, Location<World>, Entity> {
 
     @Override

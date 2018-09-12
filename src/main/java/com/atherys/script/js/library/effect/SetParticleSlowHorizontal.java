@@ -5,6 +5,9 @@ import org.spongepowered.api.effect.particle.ParticleOptions;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleSlowHorizontal implements BiFunction<ParticleEffect.Builder, Boolean, ParticleEffect.Builder> {
 
     @Override

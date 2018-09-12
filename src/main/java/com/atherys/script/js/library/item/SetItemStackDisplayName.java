@@ -6,6 +6,9 @@ import org.spongepowered.api.text.Text;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetItemStackDisplayName implements BiFunction<ItemStack, Text, Boolean> {
 
     SetItemStackDisplayName() {}

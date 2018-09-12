@@ -5,6 +5,9 @@ import org.spongepowered.api.effect.particle.ParticleOptions;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleScale implements BiFunction<ParticleEffect.Builder, Double, ParticleEffect.Builder> {
 
     @Override

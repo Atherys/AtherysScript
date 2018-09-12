@@ -8,6 +8,9 @@ import org.spongepowered.api.effect.particle.ParticleOptions;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleNote implements BiFunction<ParticleEffect.Builder, String, ParticleEffect.Builder> {
 
     @Override

@@ -6,6 +6,9 @@ import org.spongepowered.api.util.Color;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleColor implements BiFunction<ParticleEffect.Builder, Color, ParticleEffect.Builder> {
 
     @Override

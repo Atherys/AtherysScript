@@ -6,6 +6,9 @@ import org.spongepowered.api.world.World;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetPlayerLocation implements Function<Player, Location<World>> {
     @Override
     public Location<World> apply(Player player) {

@@ -6,6 +6,9 @@ import org.spongepowered.api.effect.sound.SoundType;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SoundBuilder implements BiFunction<String, Double, Sound.Builder> {
     @Override
     public Sound.Builder apply(String soundType, Double volume) {

@@ -5,6 +5,9 @@ import org.spongepowered.api.text.format.TextStyles;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class Style implements Function<String, TextStyle> {
     @Override
     public TextStyle apply(String textStyleId) {

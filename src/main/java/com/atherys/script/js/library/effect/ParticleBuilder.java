@@ -4,6 +4,9 @@ import org.spongepowered.api.effect.particle.ParticleEffect;
 
 import java.util.function.Supplier;
 
+/**
+ * @jsfunc
+ */
 public class ParticleBuilder implements Supplier<ParticleEffect.Builder> {
 
     @Override

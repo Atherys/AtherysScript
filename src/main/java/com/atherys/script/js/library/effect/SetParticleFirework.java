@@ -8,6 +8,9 @@ import org.spongepowered.api.item.FireworkEffect;
 import java.util.Arrays;
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleFirework implements BiFunction<ParticleEffect.Builder, FireworkEffect[], ParticleEffect.Builder> {
 
     @Override

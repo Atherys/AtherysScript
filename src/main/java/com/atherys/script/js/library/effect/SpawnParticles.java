@@ -5,7 +5,9 @@ import org.spongepowered.api.effect.Viewer;
 import org.spongepowered.api.effect.particle.ParticleEffect;
 import org.spongepowered.api.world.Location;
 
-
+/**
+ * @jsfunc
+ */
 public class SpawnParticles implements QuadFunction<ParticleEffect, Location, Viewer, Integer, Boolean> {
 
     @Override

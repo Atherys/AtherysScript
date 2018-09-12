@@ -4,6 +4,9 @@ import org.spongepowered.api.effect.particle.ParticleEffect;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleQuantity implements BiFunction<ParticleEffect.Builder, Integer, ParticleEffect.Builder> {
 
     @Override

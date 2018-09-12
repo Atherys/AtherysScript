@@ -7,6 +7,9 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
+/**
+ * @jsfunc
+ */
 public class SetDamageSourceEntity implements BiFunction<Entity, DamageSource.DamageSourceBuilder, DamageSource.DamageSourceBuilder> {
 
     @Override

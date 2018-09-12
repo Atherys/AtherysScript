@@ -7,6 +7,9 @@ import org.spongepowered.api.item.inventory.ItemStack;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetEntityOffhand implements BiFunction<Entity, ItemStack, Boolean> {
     public Boolean apply(Entity entity, ItemStack item){
         if (!(entity instanceof ArmorEquipable)) return false;

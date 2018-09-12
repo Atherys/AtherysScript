@@ -6,6 +6,9 @@ import org.spongepowered.api.effect.particle.ParticleOptions;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleBlockstate implements BiFunction<ParticleEffect.Builder, BlockState, ParticleEffect.Builder> {
 
     @Override

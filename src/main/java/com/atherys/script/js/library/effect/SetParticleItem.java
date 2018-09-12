@@ -6,6 +6,9 @@ import org.spongepowered.api.item.inventory.ItemStack;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetParticleItem implements BiFunction<ParticleEffect.Builder, ItemStack, ParticleEffect.Builder> {
 
     @Override

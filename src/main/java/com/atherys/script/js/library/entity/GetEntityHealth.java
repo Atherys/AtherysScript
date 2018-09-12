@@ -5,6 +5,9 @@ import org.spongepowered.api.entity.living.Living;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetEntityHealth implements Function<Entity, Double> {
     public Double apply(Entity entity){
         if (!(entity instanceof Living)) return -1.0;

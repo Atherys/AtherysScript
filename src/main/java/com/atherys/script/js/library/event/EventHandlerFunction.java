@@ -7,6 +7,9 @@ import org.spongepowered.api.event.Event;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class EventHandlerFunction<T extends Event> implements Function<Consumer<T>, Boolean> {
 
     private Class<T> eventClass;

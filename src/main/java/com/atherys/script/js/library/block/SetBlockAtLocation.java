@@ -6,6 +6,9 @@ import org.spongepowered.api.world.World;
 
 import java.util.function.BiFunction;
 
+/**
+ * @jsfunc
+ */
 public class SetBlockAtLocation implements BiFunction<Location<World>, BlockState, Boolean> {
     @Override
     public Boolean apply(Location<World> worldLocation, BlockState state) {

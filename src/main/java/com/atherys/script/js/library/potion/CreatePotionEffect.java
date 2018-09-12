@@ -5,6 +5,9 @@ import org.spongepowered.api.Sponge;
 import org.spongepowered.api.effect.potion.PotionEffect;
 import org.spongepowered.api.effect.potion.PotionEffectType;
 
+/**
+ * @jsfunc
+ */
 public class CreatePotionEffect implements PentaFunction<String, Integer, Integer, Boolean, Boolean, PotionEffect> {
 
     @Override

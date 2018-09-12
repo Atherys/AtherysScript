@@ -6,6 +6,9 @@ import org.spongepowered.api.item.inventory.ItemStack;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetItemStackEnchants implements Function<ItemStack, Enchantment[]> {
     @Override
     public Enchantment[] apply(ItemStack itemStack) {

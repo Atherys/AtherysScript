@@ -6,6 +6,9 @@ import org.spongepowered.api.text.format.TextColors;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class Color implements Function<String,TextColor> {
 
     Color() {}

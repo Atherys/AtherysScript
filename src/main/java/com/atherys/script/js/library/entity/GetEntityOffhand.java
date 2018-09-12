@@ -7,6 +7,9 @@ import org.spongepowered.api.item.inventory.ItemStack;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class GetEntityOffhand implements Function<Entity, ItemStack> {
     public ItemStack apply(Entity entity){
         if (!(entity instanceof ArmorEquipable)) return null;

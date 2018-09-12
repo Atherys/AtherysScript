@@ -7,6 +7,9 @@ import org.spongepowered.api.block.BlockSnapshot;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class SetDamageSourceBlock implements BiFunction<BlockSnapshot, DamageSource.DamageSourceBuilder, DamageSource.DamageSourceBuilder> {
 
     @Override

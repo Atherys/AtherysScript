@@ -4,6 +4,9 @@ import com.atherys.core.utils.Sound;
 
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class BuildSound implements Function<Sound.Builder, Sound> {
 
     @Override

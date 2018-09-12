@@ -8,6 +8,9 @@ import org.spongepowered.api.event.cause.entity.damage.source.FallingBlockDamage
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
+/**
+ * @jsfunc
+ */
 public class SetDamageSourceFallingBlock implements BiFunction<ImmutableFallingBlockData, DamageSource.DamageSourceBuilder, DamageSource.DamageSourceBuilder> {
 
     @Override
