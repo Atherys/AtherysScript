@@ -6,7 +6,7 @@ onScriptStart(function(event) {
     var task = taskOf("started-script-task");
     setTaskDelay(3000);
     setTaskInterval(3000);
-    setTaskExecutable(function(task) {
+    setTaskExecutable(task, function(task) {
         info("Script Started and working!");
 
         if ( i == 10 ) {

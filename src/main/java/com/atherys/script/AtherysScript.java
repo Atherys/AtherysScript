@@ -4,8 +4,10 @@ import com.atherys.core.command.CommandService;
 import com.atherys.script.api.ScriptService;
 import com.atherys.script.command.SRunCommand;
 import com.atherys.script.js.JavaScriptService;
+import com.atherys.script.listener.InternalListener;
 import com.google.inject.Inject;
 import org.slf4j.Logger;
+import org.spongepowered.api.Sponge;
 import org.spongepowered.api.event.Listener;
 import org.spongepowered.api.event.game.GameReloadEvent;
 import org.spongepowered.api.event.game.state.GameInitializationEvent;
@@ -64,6 +66,8 @@ public class AtherysScript {
             logger.error("Failed to instantiate ScriptService: No valid script type provided in config.");
             return;
         }
+
+        Sponge.getEventManager().registerListeners(this, new InternalListener());
 
         init = true;
     }
