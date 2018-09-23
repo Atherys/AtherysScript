@@ -21,6 +21,7 @@ public final class ItemStackLibrary implements LibraryExtension {
         library.put("isItemStack", new IsItemStack());
         library.put("compareItemStacks", new CompareItemStacks());
         library.put("dropItemStackOnGround", new DropItemStackOnGround());
+        library.put("createEnchantment", new CreateEnchantment());
     }
 
 }
