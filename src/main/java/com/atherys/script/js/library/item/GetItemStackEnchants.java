@@ -4,14 +4,15 @@ import org.spongepowered.api.data.key.Keys;
 import org.spongepowered.api.item.enchantment.Enchantment;
 import org.spongepowered.api.item.inventory.ItemStack;
 
+import java.util.List;
 import java.util.function.Function;
 
 /**
  * @jsfunc
  */
-public class GetItemStackEnchants implements Function<ItemStack, Enchantment[]> {
+public class GetItemStackEnchants implements Function<ItemStack, List<Enchantment>> {
     @Override
-    public Enchantment[] apply(ItemStack itemStack) {
-        return itemStack.get(Keys.ITEM_ENCHANTMENTS).map(enchantments -> (Enchantment[]) enchantments.toArray()).orElse(null);
+    public List<Enchantment> apply(ItemStack itemStack) {
+        return itemStack.get(Keys.ITEM_ENCHANTMENTS).orElse(null);
     }
 }
