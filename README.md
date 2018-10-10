@@ -77,12 +77,16 @@ We recommend the use of [Visual Studio Code](https://code.visualstudio.com/) wit
 
 ## Documentation
 
-Documentation can be found on the GitHub wiki: https://github.com/Atherys-Horizons/AtherysScript/wiki
+Documentation can be found [here](https://atherys.com/docs/).
 
 ## Requirements
 
-Just the one: https://github.com/Atherys-Horizons/AtherysCore
+Just [AtherysCore](https://github.com/Atherys-Horizons/AtherysCore).
 
 ## Need some help?
 
 Stop by the A'therys Horizons discord server! https://discord.gg/TYWvzME
+
+## Modules
+
+The [AtherysQuests](https://github.com/Atherys-Horizons/AtherysQuests) and [NPCs](https://github.com/Atherys-Horizons/NPCs) plugins provide scripting functionality to AtherysScript. You can read about them in the documentation.
