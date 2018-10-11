@@ -12,7 +12,7 @@ import java.util.function.Function;
 public class BlockOf implements Function<String, BlockState> {
 
     /**
-     * Used to create a new BlockState from a block type id.
+     * Used to create a new [`BlockState`](https://jd.spongepowered.org/7.0.0/org/spongepowered/api/block/BlockState.html) from a block type id.
      *
      * @ex var block = blockOf("minecraft:anvil");
      *

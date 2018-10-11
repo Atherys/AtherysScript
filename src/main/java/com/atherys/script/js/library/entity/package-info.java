@@ -1,4 +1,5 @@
 /**
+ * @file Entity-Functions
  * # Entity Functions
  * Entity functions allow you to create interact with entities.
  */
