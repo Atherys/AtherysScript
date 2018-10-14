@@ -17,7 +17,7 @@ public class BlockOf implements Function<String, BlockState> {
      * @ex var block = blockOf("minecraft:anvil");
      *
      * @param blockTypeId The block id.
-     * @return The BlockState for the given id, or null.
+     * @return The `BlockState` for the given id, or null.
      */
     @Override
     public BlockState apply(String blockTypeId) {

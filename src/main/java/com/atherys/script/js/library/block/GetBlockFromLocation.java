@@ -18,7 +18,7 @@ public class GetBlockFromLocation implements Function<Location<World>, BlockStat
      * @ex var block = getBlockFromLocation(location);
      *
      * @param worldLocation The location to get the block from.
-     * @return A BlockState representing the block at the location.
+     * @return A `BlockState` representing the block at the location.
      */
     @Override
     public BlockState apply(Location<World> worldLocation) {

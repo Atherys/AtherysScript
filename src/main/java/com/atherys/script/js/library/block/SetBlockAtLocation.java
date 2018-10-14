@@ -18,7 +18,7 @@ public class SetBlockAtLocation implements BiFunction<Location<World>, BlockStat
      * @ex var success = setBlockAtLocation( location, blockOf("minecraft:anvil") );
      *
      * @param worldLocation The location to change.
-     * @param state The BlockState to change the location to.
+     * @param state The `BlockState` to change the location to.
      * @return Whether the application worked.
      */
     @Override

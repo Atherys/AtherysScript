@@ -1,5 +1,6 @@
 package com.atherys.script.js;
 
+import com.atherys.script.AtherysScript;
 import com.atherys.script.api.AbstractScriptService;
 import com.atherys.script.js.event.JSScriptRegistrationEvent;
 import com.atherys.script.js.event.JSScriptReloadEvent;
@@ -23,7 +24,11 @@ public class JavaScriptService extends AbstractScriptService<JSScript> {
 
     @Override
     public void startScripts() {
-        getScripts().forEach(script -> Sponge.getEventManager().post(new JSScriptStartEvent(script)));
+        AtherysScript.getInstance().getLogger().info("Starting scripts!");
+        getScripts().forEach(script -> {
+            JavaScriptLibrary.getInstance().getEngine().put("THIS", script);
+            Sponge.getEventManager().post(new JSScriptStartEvent(script));
+        });
     }
 
     @Override
