@@ -88,5 +88,6 @@ Just [AtherysCore](https://github.com/Atherys-Horizons/AtherysCore).
 Stop by the A'therys Horizons discord server! https://discord.gg/TYWvzME
 
 ## Modules
-
-The [AtherysQuests](https://github.com/Atherys-Horizons/AtherysQuests) and [NPCs](https://github.com/Atherys-Horizons/NPCs) plugins provide scripting functionality to AtherysScript. You can read about them in the documentation.
+* [AtherysQuests](https://github.com/Atherys-Horizons/AtherysQuests)
+* [NPCs](https://github.com/Atherys-Horizons/NPCsModule)
+You can read about the modules in the [documentation](https://atherys.com/docs).
