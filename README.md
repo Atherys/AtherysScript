@@ -90,4 +90,5 @@ Stop by the A'therys Horizons discord server! https://discord.gg/TYWvzME
 ## Modules
 * [AtherysQuests](https://github.com/Atherys-Horizons/AtherysQuests)
 * [NPCs](https://github.com/Atherys-Horizons/NPCsModule)
+
 You can read about the modules in the [documentation](https://atherys.com/docs).
