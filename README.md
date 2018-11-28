@@ -26,8 +26,6 @@ information, see here:
 
 ## How does it work?
 
-Documentation at present is available, but is not very detailed. It can be found on [this project's wiki](https://github.com/Atherys-Horizons/AtherysScript/wiki).
-
 When you add this plugin to your mods folder, on first start up it will
 look for a folder in the root directory of your minecraft server
 ( on the same level as your minecraft server jar ).
@@ -88,5 +86,7 @@ Just [AtherysCore](https://github.com/Atherys-Horizons/AtherysCore).
 Stop by the A'therys Horizons discord server! https://discord.gg/TYWvzME
 
 ## Modules
+* [AtherysQuests](https://github.com/Atherys-Horizons/AtherysQuests)
+* [NPCs](https://github.com/Atherys-Horizons/NPCsModule)
 
-The [AtherysQuests](https://github.com/Atherys-Horizons/AtherysQuests) and [NPCs](https://github.com/Atherys-Horizons/NPCs) plugins provide scripting functionality to AtherysScript. You can read about them in the documentation.
+You can read about the modules in the [documentation](https://atherys.com/docs).
