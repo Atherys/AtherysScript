@@ -62,5 +62,7 @@ javadoc {
             'https://flow.github.io/math/',
             'http://jd.spongepowered.org/7.1.0/'
     )
+    // Exclude JS functions from javadocs 
+    exclude 'com/atherys/script/js/library/'
     options.addStringOption('Xdoclint:none', '-quiet')
 }
