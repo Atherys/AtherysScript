@@ -24,7 +24,7 @@ public class JavaScriptService extends AbstractScriptService<JSScript> {
 
     @Override
     public void startScripts() {
-        AtherysScript.getInstance().getLogger().info("Starting scripts!");
+        AtherysScript.getInstance().getLogger().info("Starting JavaScript scripts!");
         getScripts().forEach(script -> {
             JavaScriptLibrary.getInstance().getEngine().put("THIS", script);
             Sponge.getEventManager().post(new JSScriptStartEvent(script));

@@ -11,4 +11,7 @@ public class RandomUUID implements Supplier<UUID> {
     public UUID get() {
         return UUID.randomUUID();
     }
+    public static UUID randomUUID() {
+        return UUID.randomUUID();
+    }
 }

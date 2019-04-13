@@ -13,6 +13,7 @@ public abstract class AbstractScriptService<T extends Script> implements ScriptS
     @Override
     public void register(T script) {
         this.scripts.put(script.getId(), script);
+        AtherysScript.getInstance().getLogger().info(script.getContents());
         script.run();
     }
 

@@ -3,6 +3,8 @@ package com.atherys.script;
 import com.atherys.core.command.CommandService;
 import com.atherys.script.api.ScriptService;
 import com.atherys.script.command.SRunCommand;
+import com.atherys.script.groovy.GroovyLibrary;
+import com.atherys.script.groovy.GroovyScriptService;
 import com.atherys.script.js.JavaScriptService;
 import com.atherys.script.listener.InternalListener;
 import com.google.inject.Inject;
@@ -17,6 +19,7 @@ import org.spongepowered.api.plugin.Dependency;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.plugin.PluginContainer;
 
+import javax.script.ScriptException;
 import java.io.File;
 import java.io.IOException;
 
@@ -60,6 +63,8 @@ public class AtherysScript {
 
         if (config.SCRIPT_TYPE.equals(ScriptConfig.JAVASCRIPT_TYPE)) {
             scriptService = JavaScriptService.getInstance();
+        } else if (config.SCRIPT_TYPE.equals(ScriptConfig.GROOVY_TYPE)) {
+            scriptService = GroovyScriptService.getInstance();
         }
 
         if ( scriptService == null ) {

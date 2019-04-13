@@ -11,6 +11,7 @@ buildscript {
 
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'java'
+apply plugin: 'groovy'
 
 sourceCompatibility = 1.8
 
@@ -43,8 +44,9 @@ repositories {
 }
 
 dependencies {
-    shadow 'org.spongepowered:spongeapi:7.0.0-SNAPSHOT'
+    shadow 'org.spongepowered:spongeapi:7.1.0-SNAPSHOT'
     shadow 'com.github.Atherys-Horizons:AtherysCore:master-SNAPSHOT'
+    compile 'org.codehaus.groovy:groovy-all:2.4.15'
 }
 
 shadowJar {
