@@ -1,6 +1,5 @@
 package com.atherys.script.js.library.damage;
 
-import org.spongepowered.api.event.cause.entity.damage.source.BlockDamageSource;
 import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 
 import java.util.function.Function;

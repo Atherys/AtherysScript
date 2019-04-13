@@ -1,12 +1,11 @@
 
 package com.atherys.script.js.library.damage;
 
-import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 import org.spongepowered.api.data.manipulator.immutable.entity.ImmutableFallingBlockData;
+import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 import org.spongepowered.api.event.cause.entity.damage.source.FallingBlockDamageSource;
 
 import java.util.function.BiFunction;
-import java.util.function.Function;
 
 /**
  * @jsfunc

@@ -3,7 +3,6 @@ package com.atherys.script;
 import com.atherys.core.command.CommandService;
 import com.atherys.script.api.ScriptService;
 import com.atherys.script.command.SRunCommand;
-import com.atherys.script.groovy.GroovyLibrary;
 import com.atherys.script.groovy.GroovyScriptService;
 import com.atherys.script.js.JavaScriptService;
 import com.atherys.script.listener.InternalListener;
@@ -19,7 +18,6 @@ import org.spongepowered.api.plugin.Dependency;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.plugin.PluginContainer;
 
-import javax.script.ScriptException;
 import java.io.File;
 import java.io.IOException;
 

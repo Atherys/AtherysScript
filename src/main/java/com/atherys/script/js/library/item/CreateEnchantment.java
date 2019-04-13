@@ -3,7 +3,6 @@ package com.atherys.script.js.library.item;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.item.enchantment.Enchantment;
 import org.spongepowered.api.item.enchantment.EnchantmentType;
-import org.spongepowered.api.item.enchantment.EnchantmentTypes;
 
 import java.util.Optional;
 import java.util.function.BiFunction;

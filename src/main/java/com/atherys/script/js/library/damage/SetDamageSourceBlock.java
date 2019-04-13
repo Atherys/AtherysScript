@@ -1,11 +1,10 @@
 package com.atherys.script.js.library.damage;
 
+import org.spongepowered.api.block.BlockSnapshot;
 import org.spongepowered.api.event.cause.entity.damage.source.BlockDamageSource;
 import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
-import org.spongepowered.api.block.BlockSnapshot;
 
 import java.util.function.BiFunction;
-import java.util.function.Function;
 
 /**
  * @jsfunc

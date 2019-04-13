@@ -6,7 +6,6 @@ import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 
 import java.util.function.BiFunction;
-import java.util.function.Function;
 
 /**
  * @jsfunc
