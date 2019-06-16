@@ -1,6 +1,8 @@
 package com.atherys.script.api;
 
 
+import com.atherys.script.AtherysScript;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -28,13 +30,13 @@ public interface ScriptService<T extends Script> {
 
     default void registerFile(Path file) throws IOException {
         String contents = new String(Files.readAllBytes(file));
-        T script = createScript(file.getName(-1).toString(), contents);
+        T script = createScript(file.getFileName().toString(), contents);
         register(script);
     }
 
     default void registerFolder(Path folder) throws IOException {
         if (!Files.exists(folder) && !Files.exists(Files.createDirectories(folder))) {
-            throw new IOException("Failed to create script directory " + folder.getName(-1).toString());
+            throw new IOException("Failed to create script directory " + folder.getFileName().toString());
         }
 
         if (!Files.isDirectory(folder)) return;
