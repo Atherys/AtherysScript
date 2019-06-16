@@ -19,6 +19,7 @@ import org.spongepowered.api.plugin.PluginContainer;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Paths;
 
 import static com.atherys.script.AtherysScript.*;
 
@@ -80,7 +81,7 @@ public class AtherysScript {
         }
 
         try {
-            scriptService.registerFolder(new File(config.SCRIPT_DIRECTORY));
+            scriptService.registerFolder(Paths.get(config.SCRIPT_DIRECTORY));
             scriptService.startScripts();
         } catch (IOException e) {
             e.printStackTrace();
