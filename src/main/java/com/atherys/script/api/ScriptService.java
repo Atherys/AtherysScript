@@ -1,10 +1,14 @@
 package com.atherys.script.api;
 
-import com.google.common.io.Files;
+
+import com.atherys.script.AtherysScript;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Collection;
 import java.util.Optional;
 
@@ -24,24 +28,27 @@ public interface ScriptService<T extends Script> {
 
     Collection<T> getScripts();
 
-    default void registerFile(File file) throws IOException {
-        register(createScript(file.getName(), Files.toString(file, Charset.defaultCharset())));
+    default void registerFile(Path file) throws IOException {
+        String contents = new String(Files.readAllBytes(file));
+        T script = createScript(file.getFileName().toString(), contents);
+        register(script);
     }
 
-    default void registerFolder(File folder) throws IOException {
-        if (!folder.exists() && !folder.mkdirs()) {
-            throw new IOException("Failed to create script directory " + folder.getName());
+    default void registerFolder(Path folder) throws IOException {
+        if (!Files.exists(folder) && !Files.exists(Files.createDirectories(folder))) {
+            throw new IOException("Failed to create script directory " + folder.getFileName().toString());
         }
 
-        if (!folder.isDirectory()) return;
+        if (!Files.isDirectory(folder)) return;
 
-        File[] files = folder.listFiles();
-
-        if (files != null) {
-            for (File file : files) {
-                registerFile(file);
-            }
-        }
+        Files.walk(folder)
+                .filter(Files::isRegularFile)
+                .forEach(file -> {
+                    try {
+                        registerFile(file);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                });
     }
-
 }

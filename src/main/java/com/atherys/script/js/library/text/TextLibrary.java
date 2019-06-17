@@ -8,8 +8,6 @@ public final class TextLibrary implements LibraryExtension {
     @Override
     public void extend(ScriptLibrary library) {
         library.put("textOf", new TextOf());
-        library.put("color", new Color());
-        library.put("style", new Style());
     }
 
 }
