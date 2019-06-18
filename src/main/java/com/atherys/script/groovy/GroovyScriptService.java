@@ -3,8 +3,10 @@ package com.atherys.script.groovy;
 import com.atherys.script.AtherysScript;
 import com.atherys.script.api.AbstractScriptService;
 import com.atherys.script.groovy.event.GroovyScriptRegistrationEvent;
+import com.atherys.script.groovy.event.GroovyScriptReloadEvent;
 import com.atherys.script.groovy.event.GroovyScriptStartEvent;
 import com.atherys.script.js.JavaScriptLibrary;
+import com.atherys.script.library.event.EventHandlerFunction;
 import org.spongepowered.api.Sponge;
 
 public class GroovyScriptService extends AbstractScriptService<GroovyScript> {
@@ -17,7 +19,7 @@ public class GroovyScriptService extends AbstractScriptService<GroovyScript> {
 
     @Override
     public GroovyScript createScript(String id, String contents) {
-        return new GroovyScript(id, imports + contents, GroovyLibrary.getInstance());
+        return new GroovyScript(id, imports + contents);
     }
 
     @Override
@@ -31,12 +33,12 @@ public class GroovyScriptService extends AbstractScriptService<GroovyScript> {
 
     @Override
     public void reloadScripts() {
-
+        EventHandlerFunction.unregisterAll();
+        getScripts().forEach(script -> Sponge.getEventManager().post(new GroovyScriptReloadEvent(script)));
     }
 
     @Override
     public void stopScripts() {
-
     }
 
     public static GroovyScriptService getInstance() {
