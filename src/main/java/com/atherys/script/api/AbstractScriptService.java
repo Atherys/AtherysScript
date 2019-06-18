@@ -1,7 +1,5 @@
 package com.atherys.script.api;
 
-import com.atherys.script.AtherysScript;
-
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Optional;

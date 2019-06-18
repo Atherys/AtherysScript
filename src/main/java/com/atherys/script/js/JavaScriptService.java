@@ -6,7 +6,7 @@ import com.atherys.script.js.event.JSScriptRegistrationEvent;
 import com.atherys.script.js.event.JSScriptReloadEvent;
 import com.atherys.script.js.event.JSScriptStartEvent;
 import com.atherys.script.js.event.JSScriptStopEvent;
-import com.atherys.script.js.library.event.EventHandlerFunction;
+import com.atherys.script.library.event.EventHandlerFunction;
 import org.spongepowered.api.Sponge;
 
 public class JavaScriptService extends AbstractScriptService<JSScript> {
@@ -24,7 +24,7 @@ public class JavaScriptService extends AbstractScriptService<JSScript> {
 
     @Override
     public void startScripts() {
-        AtherysScript.getInstance().getLogger().info("Starting scripts!");
+        AtherysScript.getInstance().getLogger().info("Starting JavaScript scripts!");
         getScripts().forEach(script -> {
             JavaScriptLibrary.getInstance().getEngine().put("THIS", script);
             Sponge.getEventManager().post(new JSScriptStartEvent(script));

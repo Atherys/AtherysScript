@@ -3,6 +3,6 @@ package com.atherys.script.api.util;
 @FunctionalInterface
 public interface TriFunction<T1, T2, T3, R> {
 
-    R apply(T1 arg1, T2 arg2, T3 arg3);
+    R call(T1 arg1, T2 arg2, T3 arg3);
 
 }

@@ -8,6 +8,7 @@ import java.io.IOException;
 public class ScriptConfig extends PluginConfig {
 
     public static final String JAVASCRIPT_TYPE = "javascript";
+    public static final String GROOVY_TYPE = "groovy";
 
     @Setting("script-type")
     public String SCRIPT_TYPE = JAVASCRIPT_TYPE;
