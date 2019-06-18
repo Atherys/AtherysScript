@@ -9,13 +9,15 @@ import org.spongepowered.api.Sponge;
 
 public class GroovyScriptService extends AbstractScriptService<GroovyScript> {
     private static GroovyScriptService instance = new GroovyScriptService();
+    private static String imports = "import java.util.function.Consumer;";
+
     private GroovyScriptService() {
         Sponge.getEventManager().post(new GroovyScriptRegistrationEvent(this, GroovyLibrary.getInstance()));
     }
 
     @Override
     public GroovyScript createScript(String id, String contents) {
-        return new GroovyScript(id, contents, GroovyLibrary.getInstance());
+        return new GroovyScript(id, imports + contents, GroovyLibrary.getInstance());
     }
 
     @Override

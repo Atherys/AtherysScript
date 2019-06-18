@@ -18,7 +18,6 @@ import org.spongepowered.api.plugin.Dependency;
 import org.spongepowered.api.plugin.Plugin;
 import org.spongepowered.api.plugin.PluginContainer;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 

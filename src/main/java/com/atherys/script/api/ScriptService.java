@@ -1,14 +1,9 @@
 package com.atherys.script.api;
 
 
-import com.atherys.script.AtherysScript;
-
-import java.io.File;
 import java.io.IOException;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Collection;
 import java.util.Optional;
 
