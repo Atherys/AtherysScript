@@ -1,6 +1,6 @@
 package com.atherys.script.library.player;
 
-import com.atherys.script.function.ScriptFunction;
+import com.atherys.script.api.function.ScriptFunction;
 import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;

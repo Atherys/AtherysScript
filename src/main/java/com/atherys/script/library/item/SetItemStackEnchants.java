@@ -1,6 +1,6 @@
 package com.atherys.script.library.item;
 
-import com.atherys.script.function.ScriptBiFunction;
+import com.atherys.script.api.function.ScriptBiFunction;
 import org.spongepowered.api.data.key.Keys;
 import org.spongepowered.api.item.enchantment.Enchantment;
 import org.spongepowered.api.item.inventory.ItemStack;

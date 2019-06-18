@@ -1,12 +1,9 @@
 package com.atherys.script.library.block;
 
-import com.atherys.script.function.ScriptFunction;
+import com.atherys.script.api.function.ScriptFunction;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.block.BlockState;
 import org.spongepowered.api.block.BlockType;
-
-;
-
 
 /**
  * @jsfunc

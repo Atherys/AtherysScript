@@ -1,6 +1,6 @@
 package com.atherys.script.library.effect;
 
-import com.atherys.script.function.ScriptBiFunction;
+import com.atherys.script.api.function.ScriptBiFunction;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.effect.particle.ParticleEffect;
 import org.spongepowered.api.effect.particle.ParticleType;

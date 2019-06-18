@@ -1,6 +1,6 @@
 package com.atherys.script.library.effect;
 
-import com.atherys.script.api.util.QuadFunction;
+import com.atherys.script.api.function.QuadFunction;
 import org.spongepowered.api.effect.Viewer;
 import org.spongepowered.api.effect.particle.ParticleEffect;
 import org.spongepowered.api.world.Location;

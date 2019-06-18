@@ -1,6 +1,6 @@
 package com.atherys.script.library.damage;
 
-import com.atherys.script.function.ScriptFunction;
+import com.atherys.script.api.function.ScriptFunction;
 import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 
 ;

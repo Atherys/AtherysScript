@@ -1,7 +1,7 @@
 package com.atherys.script.library.sound;
 
 import com.atherys.core.utils.Sound;
-import com.atherys.script.function.ScriptFunction;
+import com.atherys.script.api.function.ScriptFunction;
 
 ;
 

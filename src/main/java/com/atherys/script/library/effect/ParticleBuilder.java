@@ -1,6 +1,6 @@
 package com.atherys.script.library.effect;
 
-import com.atherys.script.function.ScriptSupplier;
+import com.atherys.script.api.function.ScriptSupplier;
 import org.spongepowered.api.effect.particle.ParticleEffect;
 
 /**

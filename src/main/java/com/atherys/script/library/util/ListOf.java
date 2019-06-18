@@ -1,6 +1,6 @@
 package com.atherys.script.library.util;
 
-import com.atherys.script.function.ScriptFunction;
+import com.atherys.script.api.function.ScriptFunction;
 
 import java.util.ArrayList;
 import java.util.Arrays;

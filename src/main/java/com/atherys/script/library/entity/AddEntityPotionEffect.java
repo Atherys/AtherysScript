@@ -1,6 +1,6 @@
 package com.atherys.script.library.entity;
 
-import com.atherys.script.function.ScriptBiFunction;
+import com.atherys.script.api.function.ScriptBiFunction;
 import org.spongepowered.api.data.manipulator.mutable.PotionEffectData;
 import org.spongepowered.api.effect.potion.PotionEffect;
 import org.spongepowered.api.entity.Entity;

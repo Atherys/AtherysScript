@@ -1,7 +1,7 @@
 package com.atherys.script.library.sound;
 
 import com.atherys.core.utils.Sound;
-import com.atherys.script.api.util.TriFunction;
+import com.atherys.script.api.function.TriFunction;
 import com.flowpowered.math.vector.Vector3d;
 import org.spongepowered.api.effect.Viewer;
 

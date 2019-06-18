@@ -1,7 +1,7 @@
 package com.atherys.script.library.event;
 
 import com.atherys.script.AtherysScript;
-import com.atherys.script.function.ScriptFunction;
+import com.atherys.script.api.function.ScriptFunction;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.event.Event;
 import org.spongepowered.api.event.EventListener;

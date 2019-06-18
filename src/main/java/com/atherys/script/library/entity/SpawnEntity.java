@@ -1,6 +1,6 @@
 package com.atherys.script.library.entity;
 
-import com.atherys.script.function.ScriptFunction;
+import com.atherys.script.api.function.ScriptFunction;
 import org.spongepowered.api.entity.Entity;
 
 /**

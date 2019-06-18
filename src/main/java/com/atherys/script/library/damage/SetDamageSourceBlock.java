@@ -1,6 +1,6 @@
 package com.atherys.script.library.damage;
 
-import com.atherys.script.function.ScriptBiFunction;
+import com.atherys.script.api.function.ScriptBiFunction;
 import org.spongepowered.api.block.BlockSnapshot;
 import org.spongepowered.api.event.cause.entity.damage.source.BlockDamageSource;
 import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;

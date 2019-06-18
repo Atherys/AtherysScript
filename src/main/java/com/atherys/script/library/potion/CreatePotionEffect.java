@@ -1,6 +1,6 @@
 package com.atherys.script.library.potion;
 
-import com.atherys.script.api.util.PentaFunction;
+import com.atherys.script.api.function.PentaFunction;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.effect.potion.PotionEffect;
 import org.spongepowered.api.effect.potion.PotionEffectType;

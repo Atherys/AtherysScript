@@ -1,6 +1,6 @@
 package com.atherys.script.library.location;
 
-import com.atherys.script.api.util.QuadFunction;
+import com.atherys.script.api.function.QuadFunction;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 

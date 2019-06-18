@@ -1,6 +1,6 @@
 package com.atherys.script.library.task;
 
-import com.atherys.script.function.ScriptBiFunction;
+import com.atherys.script.api.function.ScriptBiFunction;
 import org.spongepowered.api.scheduler.Task;
 
 /**

@@ -1,7 +1,7 @@
 package com.atherys.script.library.util;
 
 import com.atherys.script.AtherysScript;
-import com.atherys.script.function.ScriptConsumer;
+import com.atherys.script.api.function.ScriptConsumer;
 
 /**
  * @jsfunc

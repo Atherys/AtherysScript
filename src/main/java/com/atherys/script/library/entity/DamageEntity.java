@@ -1,6 +1,6 @@
 package com.atherys.script.library.entity;
 
-import com.atherys.script.api.util.TriFunction;
+import com.atherys.script.api.function.TriFunction;
 import org.spongepowered.api.entity.Entity;
 import org.spongepowered.api.event.cause.entity.damage.source.DamageSource;
 

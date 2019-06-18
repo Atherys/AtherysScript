@@ -1,7 +1,7 @@
 package com.atherys.script.library.sound;
 
 import com.atherys.core.utils.Sound;
-import com.atherys.script.function.ScriptBiFunction;
+import com.atherys.script.api.function.ScriptBiFunction;
 import org.spongepowered.api.Sponge;
 import org.spongepowered.api.effect.sound.SoundCategory;
 

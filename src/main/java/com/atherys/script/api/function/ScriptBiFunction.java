@@ -1,4 +1,4 @@
-package com.atherys.script.function;
+package com.atherys.script.api.function;
 
 @FunctionalInterface
 public interface ScriptBiFunction<T, U, R> {

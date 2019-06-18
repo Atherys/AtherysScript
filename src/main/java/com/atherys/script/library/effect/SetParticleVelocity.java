@@ -1,6 +1,6 @@
 package com.atherys.script.library.effect;
 
-import com.atherys.script.api.util.QuadFunction;
+import com.atherys.script.api.function.QuadFunction;
 import com.flowpowered.math.vector.Vector3d;
 import org.spongepowered.api.effect.particle.ParticleEffect;
 

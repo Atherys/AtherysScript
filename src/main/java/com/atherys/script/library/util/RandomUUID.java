@@ -1,6 +1,6 @@
 package com.atherys.script.library.util;
 
-import com.atherys.script.function.ScriptSupplier;
+import com.atherys.script.api.function.ScriptSupplier;
 
 import java.util.UUID;
 
