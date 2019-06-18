@@ -1,13 +1,13 @@
 package com.atherys.script.library.location;
 
-import com.atherys.script.api.function.QuadFunction;
+import com.atherys.script.api.function.ScriptQuadFunction;
 import org.spongepowered.api.world.Location;
 import org.spongepowered.api.world.World;
 
 /**
  * @jsfunc
  */
-public class LocationOf implements QuadFunction<World, Double, Double, Double, Location<World>> {
+public class LocationOf implements ScriptQuadFunction<World, Double, Double, Double, Location<World>> {
     /**
      * Creates a new location from the provided parameters.
      *
