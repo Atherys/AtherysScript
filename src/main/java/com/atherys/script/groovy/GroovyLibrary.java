@@ -1,25 +1,13 @@
 package com.atherys.script.groovy;
 
-import com.atherys.script.api.library.ScriptLibrary;
+import com.atherys.script.api.library.AbstractScriptLibrary;
 
-import javax.script.ScriptEngine;
-import javax.script.ScriptEngineManager;
-
-public class GroovyLibrary implements ScriptLibrary {
+public class GroovyLibrary extends AbstractScriptLibrary {
 
     private static GroovyLibrary instance = new GroovyLibrary();
+
     private GroovyLibrary() {
-    }
-
-    private ScriptEngine engine;
-
-    @Override
-    public ScriptEngine getEngine() {
-        if (engine == null) {
-            engine = new ScriptEngineManager().getEngineByName("groovy");
-            extendWithBaseLib();
-        }
-        return engine;
+        super("groovy");
     }
 
     public static GroovyLibrary getInstance() {

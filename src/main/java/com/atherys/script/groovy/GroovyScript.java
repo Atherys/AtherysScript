@@ -5,7 +5,9 @@ import com.atherys.script.api.Script;
 import com.atherys.script.api.library.ScriptLibrary;
 
 public class GroovyScript extends AbstractScript {
+    private static String imports = "import java.util.function.Consumer;";
+
     public GroovyScript(String id, String contents) {
-        super(id, contents, GroovyLibrary.getInstance());
+        super(id, imports + contents, GroovyLibrary.getInstance());
     }
 }

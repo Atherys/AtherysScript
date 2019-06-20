@@ -213,7 +213,6 @@ public final class EventLibrary implements LibraryExtension {
         library.put("onGenerateChunk", new EventHandlerFunction<>(GenerateChunkEvent.class));
         library.put("onPostGenerateChunk", new EventHandlerFunction<>(GenerateChunkEvent.Post.class));
         library.put("onPreGenerateChunk", new EventHandlerFunction<>(GenerateChunkEvent.Pre.class));
-        library.put("onGeneric", new EventHandlerFunction<>(GenericEvent.class));
         library.put("onHandInteract", new EventHandlerFunction<>(HandInteractEvent.class));
         library.put("onHarvestEntity", new EventHandlerFunction<>(HarvestEntityEvent.class));
         library.put("onTargetHumanoidHarvestEntity", new EventHandlerFunction<>(HarvestEntityEvent.TargetHumanoid.class));

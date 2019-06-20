@@ -18,6 +18,9 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptException;
 import java.util.function.Consumer;
 
+/**
+ * Manages the runtime environment for scripts.
+ */
 public interface ScriptLibrary {
 
     ScriptEngine getEngine();
@@ -30,26 +33,6 @@ public interface ScriptLibrary {
      */
     default void put(String key, Object object) {
         getEngine().put(key, object);
-    }
-
-    /**
-     * The same as {@link ScriptLibrary#put(String, Object)}, but wrapped in a {@link ScriptAddon}
-     *
-     * @param addon The addon
-     */
-    default void put(ScriptAddon addon) {
-        getEngine().put(addon.getKey(), addon.getObject());
-    }
-
-    /**
-     * Add all key/value pairs to the global scope of the ScriptEngine
-     *
-     * @param addons The addon(s)
-     */
-    default void putAll(ScriptAddon... addons) {
-        for (ScriptAddon scriptAddon : addons) {
-            getEngine().put(scriptAddon.getKey(), scriptAddon.getObject());
-        }
     }
 
     default void extendWith(LibraryExtension extension) {
