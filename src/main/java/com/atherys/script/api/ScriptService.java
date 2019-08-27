@@ -21,6 +21,8 @@ public interface ScriptService<T extends Script> {
 
     void stopScripts();
 
+    void clearScripts();
+
     Collection<T> getScripts();
 
     default void registerFile(Path file) throws IOException {

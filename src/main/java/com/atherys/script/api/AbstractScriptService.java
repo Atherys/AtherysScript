@@ -2,11 +2,12 @@ package com.atherys.script.api;
 
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Optional;
 
 public abstract class AbstractScriptService<T extends Script> implements ScriptService<T> {
 
-    private HashMap<String, T> scripts = new HashMap<>();
+    private Map<String, T> scripts = new HashMap<>();
 
     @Override
     public void register(T script) {
@@ -22,5 +23,10 @@ public abstract class AbstractScriptService<T extends Script> implements ScriptS
     @Override
     public Collection<T> getScripts() {
         return scripts.values();
+    }
+
+    @Override
+    public void clearScripts() {
+        scripts.clear();
     }
 }
