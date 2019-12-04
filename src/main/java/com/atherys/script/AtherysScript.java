@@ -31,7 +31,7 @@ public class AtherysScript {
     static final String ID = "atherysscript";
     static final String NAME = "AtherysScript";
     static final String DESCRIPTION = "A plugin to provide scripting utilities for the A'therys Horizons server.";
-    static final String VERSION = "1.0.0a";
+    static final String VERSION = "%PLUGIN_VERSION%";
 
     private static AtherysScript instance;
 
