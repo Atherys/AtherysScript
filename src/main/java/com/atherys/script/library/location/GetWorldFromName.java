@@ -13,7 +13,7 @@ public class GetWorldFromName implements ScriptFunction<String, World> {
     /**
      * Used to get a world by it's name. The default world name is usually world.
      *
-     * @ex var world = getWorldByName("world");
+     * @ex var world = getWorldFromName("world");
      *
      * @param worldName
      * @return
