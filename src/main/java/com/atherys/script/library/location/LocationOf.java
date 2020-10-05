@@ -11,7 +11,7 @@ public class LocationOf implements ScriptQuadFunction<World, Double, Double, Dou
     /**
      * Creates a new location from the provided parameters.
      *
-     * @ex var world = getWorldByName("world");
+     * @ex var world = getWorldFromName("world");
      * @ex var location = locationOf(world, 160, 50.3, -100.43);
      */
     @Override
