@@ -1,58 +1,15 @@
-group 'com.atherys'
+plugins {
+    id 'com.github.johnrengelman.shadow' version '2.0.2'
+    id 'com.atherys.gradle' version '1.6.0'
+    id 'net.kyori.blossom' version '1.1.0'
+    id 'maven-publish'
+}
 
+group 'com.atherys'
 version '1.0.0'
 
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.2'
-    }
-}
-
-apply plugin: 'com.github.johnrengelman.shadow'
-apply plugin: 'java'
-
-sourceCompatibility = 1.8
-
-compileJava.options.encoding = 'UTF-8'
-
-tasks.withType(JavaCompile) {
-    options.encoding = 'UTF-8'
-}
-
-sourceSets {
-    main {
-        resources {
-            srcDirs "src/main/"
-            exclude "java/**"
-            exclude "kotlin/**"
-        }
-    }
-}
-
-repositories {
-    mavenCentral()
-    maven {
-        name = 'sponge'
-        url = 'https://repo.spongepowered.org/maven'
-    }
-    maven {
-        name = 'jitpack'
-        url = 'https://jitpack.io'
-    }
-}
-
 dependencies {
-    shadow 'org.spongepowered:spongeapi:7.1.0-SNAPSHOT'
-    shadow 'com.github.Atherys-Horizons:AtherysCore:master-SNAPSHOT'
     compile 'org.codehaus.groovy:groovy-all:2.4.15'
-}
-
-shadowJar {
-    relocate 'org.bson', 'com.atherys.libs.org.bson'
-    relocate 'com.mongodb', 'com.atherys.libs.com.mongodb'
 }
 
 javadoc {
@@ -68,4 +25,25 @@ javadoc {
     // Exclude JS functions from javadocs 
     exclude 'com/atherys/script/js/library/'
     options.addStringOption('Xdoclint:none', '-quiet')
+}
+
+publishing {
+    repositories {
+        maven {
+            version = project.hasProperty("release") ? project.version : project.version + "-SNAPSHOT";
+
+            def releasesRepoUrl = "https://repo.atherys.com/releases"
+            def snapshotsRepoUrl = "https://repo.atherys.com/snapshots"
+            url = project.hasProperty("release") ? releasesRepoUrl : snapshotsRepoUrl
+            credentials(PasswordCredentials) {
+                username = project.properties.getOrDefault("repoUploadAlias", "none")
+                password = project.properties.getOrDefault("repoUploadToken", "none")
+            }
+        }
+    }
+    publications {
+        shadow(MavenPublication) { publication ->
+            project.shadow.component(publication)
+        }
+    }
 }
