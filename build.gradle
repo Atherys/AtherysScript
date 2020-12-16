@@ -6,10 +6,14 @@ plugins {
 }
 
 group 'com.atherys'
-version '1.0.0'
+version '1.0.1'
 
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.15'
+}
+
+blossom {
+    replaceToken '%PROJECT_VERSION%', project.version
 }
 
 javadoc {
